@@ -35,3 +35,11 @@ poferrari/api-conversao:v1
 * se forma semelhante ao gitignore, ignorar a pasta, ignorar arquivo que não pode ser copiado
 
 ## COPY vs ADD
+* utilizar sempre o COPY
+
+## ENTRYPOINT vs CMD
+* utilizado para inicializar o container
+* ENTRYPOINT é imutável, não consegue sobreescrever, já o CMD você consegue sobreescrever na execução do container
+* pode usar os dois combinados, CMD para passar parametros para o ENTRYPOINT, auxiliando na execução do container
+
+## Uso do multistage
